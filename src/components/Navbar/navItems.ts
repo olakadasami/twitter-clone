@@ -17,27 +17,27 @@ export const navItems: NavItemProps[] = [
   },
   {
     title: "Explore",
-    href: "/",
+    href: "/explore",
     Icon: FaHashtag,
   },
   {
     title: "Notifications",
-    href: "/",
+    href: "/notifications",
     Icon: FaBell,
   },
   {
     title: "Messages",
-    href: "/",
+    href: "/messages",
     Icon: FaEnvelope,
   },
   {
     title: "Bookmarks",
-    href: "/",
+    href: "/bookmarks",
     Icon: FaBookmark,
   },
   {
     title: "Profile",
-    href: "/",
+    href: "/profile",
     Icon: FaUser,
   },
   {

@@ -3,8 +3,12 @@ import { navItems } from "./navItems";
 import NavItem from "./NavItem";
 import { Link } from "react-router-dom";
 import Button from "../UI/Button";
+import { useModalStore } from "../../store/modalStore";
 
 function Navbar() {
+  const setOpen = useModalStore((state) => state.setOpen);
+  const handleTweetModal = () => setOpen(true);
+
   return (
     <nav className="flex flex-col py-10 gap-6 px-10">
       <Link className="self-start" to={"/"}>
@@ -20,7 +24,9 @@ function Navbar() {
           />
         ))}
       </ul>
-      <Button href="/" title="Tweet" />
+      <div onClick={handleTweetModal}>
+        <Button href="/" title="Tweet" />
+      </div>
     </nav>
   );
 }
