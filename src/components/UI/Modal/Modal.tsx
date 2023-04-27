@@ -10,10 +10,9 @@ function Modal() {
 
   return ReactDOM.createPortal(
     <>
-      <div
-        onClick={closeModal}
-        className="bg-black cursor-wait opacity-80 fixed inset-0"
-      />
+      {/* BAckdrop */}
+      <div onClick={closeModal} className="bg-black opacity-80 fixed inset-0" />
+      {/* Modal */}
       <section className=" fixed top-10 shadow-2xl w-full z-100">
         <div className="bg-white rounded-3xl p-4 w-1/2 mx-auto">
           <div className="flex items-end">
